@@ -1,0 +1,357 @@
+/* ESTILOS POR DEFECTO ----------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(219, 219, 219), rgb(177, 177, 177));
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.show_on{
+    display: none;
+}
+
+.show_off{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+.show_off p{
+    max-width: 50%;
+    font-size: 1.3em;
+}
+
+.show_off img{
+    width: 200px;
+}
+
+
+
+
+/* TOP NAV ----------------- */
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    height: 100vh;
+    display: none;
+
+    /* overflow: hidden; */
+
+    
+      
+}
+
+/* TOP NAV ----------------- */
+
+.background_top_nav{
+    background-image: linear-gradient(rgba(15, 15, 15, 0.95), rgba(15, 15, 15, 0.95)),
+    url(assets/nav/background.jpg);
+
+    position: relative;
+
+    box-shadow: 0 2px 3px #00000052;
+    z-index: 10000;
+}
+
+.top_nav{
+    /* min-width: 770px;
+    max-width: 770px; */
+    width: 771px;
+    margin: auto;
+    /* background: rgb(26, 26, 26); */
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo_container{
+    min-width: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    transform: translate(15px);
+    width: 98px;
+}
+
+.top_nav_buttons img{
+    width: 32px;
+}
+
+.top_nav_bars{
+    min-width: 50px;
+    background: none;
+    border: none;
+    color: #ffffff31;
+    font-size: 1.3em;
+}
+
+.top_nav_bars:focus{
+    color: #ffffffe8;
+}
+
+.top_nav_buttons{
+    width: 100%;
+
+    padding: 0 10px;
+
+    /* width: 100%; */
+
+    height: 50px;
+
+    /* font-family: 'Open Sans', sans-serif; */
+
+    font-family: 'Cabin Sketch', cursive;
+
+    /* font-family: 'Rubik Distressed', cursive; */
+
+    font-weight: 500;
+
+    font-size: 1.27em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    background: none;
+    border: none;
+    color: #ffffffc5;
+
+    border-right: 1px solid #353535;
+}
+
+.top_nav_buttons:nth-child(3){
+    color: rgb(255, 178, 90);
+}
+
+.top_nav_buttons:focus{
+    background-size: 100% 100%;
+    box-shadow: 0 0 5px #000000b4;
+    height: 53px;
+}
+
+.top_nav_buttons:focus:nth-child(2){
+    background-image: url(assets/nav/topdeals.png);
+}
+
+.top_nav_buttons:focus:nth-child(3){
+    background-image: url(assets/nav/topup.png);
+}
+
+.top_nav_buttons:focus:nth-child(4){
+    background-image: url(assets/nav/furniture.png);
+}
+
+.top_nav_buttons:focus:nth-child(5){
+    background-image: url(assets/nav/fashion.png);
+}
+
+/* BOTTOM CONTAINER ----------------- */
+
+.bottom_container{
+    width: 770px;
+    margin: auto;
+    display: flex;
+    max-width: 900px;
+    /* min-width: 500px; */
+    height: calc(100vh - 60px);
+    max-height: 450px;
+
+    /* height: 100%;
+    width: 100%;
+
+    min-height: 600px; */
+}
+
+/* SIDE NAV ----------------- */
+
+.side_nav{
+    position: relative;
+    min-width: 170px;
+    background: rgb(131, 131, 131);
+    height: calc(100% - 12px);
+    margin: 6px;
+    margin-right: 3px;
+    /* max-height: 60px; */
+
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+
+    background: linear-gradient(45deg, rgb(136, 147, 152), rgb(187, 194, 198));
+
+
+    box-shadow: 0 2px 4px #00000052;
+}
+
+/* SCROLL PERSONALIZADO DE LA SIDE_NAV*/
+
+.side_nav::-webkit-scrollbar{
+    width: 0px;
+    height: 100%;
+    background: none;
+}
+
+.side_nav::-webkit-scrollbar-thumb{
+    background: none;
+}
+
+
+
+
+
+
+.menu_select{
+    background: none;
+    border: none;
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(26, 26, 26);
+
+    font-weight: 500;
+}
+
+.menu_select:last-child{
+    margin-bottom: 40px;
+}
+
+.menu_select:focus{
+    background: rgb(163,121,93);
+    border: 2px solid rgb(216,180,131);
+    color: #ffe4aa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button_back{
+    position: fixed;
+    bottom: 6px;
+    width: 170px;
+    background: linear-gradient(90deg,#6D797D,#566063,#6D797D);
+    border: 1px solid #6d787c;
+    padding: 10px;
+    margin-left: 6px;
+}
+
+.button_back:hover {
+    background: linear-gradient(90deg,#7c898d,#697579,#7c898d);
+    border: 1px solid #818d92;
+}
+
+.button_back img{
+    width: 20px;
+}
+
+
+/* VARIATION OF YOUTH GACHA ----------------- */
+
+.voy_gacha{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 2px);
+    background-image: url(assets/variation_of_youth/background.png);
+    background-size: cover;
+    background-position: center;
+    margin: 6px;
+    margin-left: 3px;
+    box-shadow: 0 2px 7px #00000052;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+LEEME :
+
+HACE UN MENU RESPONSIVE CON BARRAS Y PERMITÍ QUE EL ANCHO MINIMO DE LA PAGINA BAJE DE LOS 500 PX POR LO MENOS, ELIMINA EL SIDE BAR Y METE TODO EN EL TOP NAV */
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (min-width: 500px) {
+    .show_on{
+        display: block;
+    }
+    .show_off{
+        display: none;
+    }
+  } */
+
+
+@media (min-width: 770px) {
+    .show_on{
+        display: block;
+    }
+    .show_off{
+        display: none;
+    }
+  }
+
+
+@media (min-height: 510px){
+    .button_back{
+        height: 44px;
+        top: 460px;
+    }
+}
